@@ -20,34 +20,22 @@ c. Review the health check - The script will verify Python installation and dire
 
 Step 4: Navigate to the created directory and run the attendance checker
 bash
-cd attendance_tracker_{your_directory_name}
+cd attendance_tracker_{your_directory_name put when prompted in step 1}
 python3 attendance_checker.py
-```
 
-## How to Trigger the Archive Feature
+# How to Trigger the Archive Feature
 
-The archive feature is automatically triggered when you **interrupt the script** during execution.
+The archive feature is automatically triggered when you interrupt during execution.
 
-### To trigger the archive:
-1. Run the script: `./setup_attendance.sh`
-2. Press **Ctrl+C** at any time during the setup process
+# To trigger the archive:
+a. Run the script by pressing ./setup_attendance.sh
+b. Press Ctrl+C at any time during the setup process
 
-### What happens:
+# What happens:
 - The script catches the interrupt signal
 - Creates an archive file: `attendance_tracker_{input}_archive.tar.gz`
 - Removes the incomplete directory to keep workspace clean
 - Displays a confirmation message
-
-### Example:
-```bash
-./setup_attendance.sh
-Enter the directory name: test
-^C
-Script interrupted! Cleaning up...
-Incomplete project archived as: attendance_tracker_test_archive.tar.gz
-Incomplete directory removed.
-Exiting script.
-```
 
 The archive file will be saved in the same directory where you ran the script.
 
