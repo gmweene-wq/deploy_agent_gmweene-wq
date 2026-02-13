@@ -1,6 +1,7 @@
 AUTHOR: Griphen Mweene
 email: gmweene@alustudent.com
-
+#LINK TO YOUTUBE VIDEO EXPLAINING THE SCRIPT
+https://youtu.be/GXTeG5A1v94
 # Student Attendance Tracker - Project Factory
 
 This shell script automates the creation and configuration of a Student Attendance Tracker project.
