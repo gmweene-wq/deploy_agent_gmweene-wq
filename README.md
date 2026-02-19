@@ -10,10 +10,10 @@ This shell script automates the creation and configuration of a Student Attendan
 
 Step 1: Make the script executable
 
-chmod +x setup_attendance.sh
+chmod +x setup_project.sh
 
  Step 2: Run the script
-./setup_attendance.sh or bash setup_attendance.sh
+./setup_project.sh
 
 Step 3: Follow the prompts
 a. Enter a directory name when prompted (e.g `v1`, `project1`)
@@ -32,12 +32,12 @@ python3 attendance_checker.py
 The archive feature is automatically triggered when you interrupt during execution.
 
 # To trigger the archive:
-a. Run the script by pressing ./setup_attendance.sh
+a. Run the script by pressing ./setup_project.sh
 b. Press Ctrl+C at any time during the setup process
 
 # What happens:
 - The script catches the interrupt signal
-- Creates an archive file: `attendance_tracker_{input}_archive.tar.gz`
+- Creates an archive directory: `attendance_tracker_{input}_archive`
 - Removes the incomplete directory to keep workspace clean
 - Displays a confirmation message
 
